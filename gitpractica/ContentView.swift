@@ -22,6 +22,12 @@ struct ContentView: View {
                     Image(systemName: "clock")
                     Text("Contador")
                 }
+			
+			Text("AY SEÑOR QUE DOLOR")
+				.tabItem{
+					Image(systemName: "clock")
+					Text("Contador")
+				}
         }.accentColor(Color.yellow)
         
     }

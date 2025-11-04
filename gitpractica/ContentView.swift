@@ -10,24 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            Text("FIJATE FIJATEE")
-                .tabItem {
-                Label("Home",
-                systemImage: "house")
-                        
-                    
+            WelcomeView()
+                .tabItem{
+                    Label("Home", systemImage: "house")
                 }
-            Text("EN TU SECRETARIAAAA")
+            WelcomeView()
                 .tabItem{
                     Image(systemName: "clock")
                     Text("Contador")
                 }
-			
-			Text("AY SEÑOR QUE DOLOR")
-				.tabItem{
-					Image(systemName: "clock")
-					Text("Contador")
-				}
         }.accentColor(Color.yellow)
     }
 }
